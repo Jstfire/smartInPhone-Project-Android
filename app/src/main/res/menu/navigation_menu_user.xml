@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuListHP"
+        android:icon="@drawable/list"
+        android:title="@string/list_hp"/>
+    <item android:id="@+id/menuUpdateHP"
+        android:icon="@drawable/edit"
+        android:title="@string/update_hp"/>
+    <item android:title="@string/akun">
+        <menu>
+            <item android:id="@+id/menuChangeProfil"
+                android:icon="@drawable/edit_profile"
+                android:title="@string/edit_profile"/>
+            <item android:id="@+id/menuChangePassword"
+                android:icon="@drawable/edit_profile"
+                android:title="@string/change_password"/>
+        </menu>
+    </item>
+</menu>

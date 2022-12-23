@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_user"
+    app:startDestination="@id/menuListHP">
+
+    <fragment
+        android:id="@+id/menuListHP"
+        android:name="com.example.smartinphoneprojectandroid.ListhpFragment"
+        android:label="fragment_listhp"
+        tools:layout="@layout/fragment_listhp" />
+    <fragment
+        android:id="@+id/menuUpdateHP"
+        android:name="com.example.smartinphoneprojectandroid.UpdateDeleteFragment"
+        android:label="fragment_update_delete"
+        tools:layout="@layout/fragment_update_delete"/>
+    <activity
+        android:id="@+id/menuAddHP"
+        android:name="com.example.smartinphoneprojectandroid.AddHPActivity"
+        android:label="activity_add_hpactivity"
+        tools:layout="@layout/activity_add_hpactivity" />
+    <activity
+        android:id="@+id/menuChangeProfil"
+        android:name="com.example.smartinphoneprojectandroid.ChangeProfileActivity"
+        android:label="activity_change_profile"
+        tools:layout="@layout/activity_change_profile" />
+    <activity
+        android:id="@+id/menuChangePassword"
+        android:name="com.example.smartinphoneprojectandroid.ChangePasswordActivity"
+        android:label="activity_change_password"
+        tools:layout="@layout/activity_change_password" />
+</navigation>
