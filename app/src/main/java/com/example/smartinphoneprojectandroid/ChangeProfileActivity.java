@@ -142,10 +142,10 @@ public class ChangeProfileActivity extends AppCompatActivity {
                     if (response.body().getStatus().toString().equals("200")) {
                         Toast.makeText(getApplicationContext(), "Change Avatar Successfully", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(getApplicationContext(), "Change Avatar Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Change Avatar Failed 1", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Change Avatar Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Change Avatar Failed 2", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -178,10 +178,11 @@ public class ChangeProfileActivity extends AppCompatActivity {
                         i.putExtras(bundle);
                         startActivity(i);
                     } else {
-                        Toast.makeText(getApplicationContext(), "Change Profile Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Change Profile Failed 1", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Change Profile Failed", Toast.LENGTH_SHORT).show();
+                    Log.e(TAG, "onResponse: "+response );
+                    Toast.makeText(getApplicationContext(), "Change Profile Failed 2", Toast.LENGTH_SHORT).show();
                 }
             }
 

@@ -48,7 +48,7 @@ public interface GetDataUser {
     );
 
     @Multipart
-    @POST("user/updatePassword/{id}")
+    @POST("user/updateProfile/{id}")
     Call<LoginResponse> changeProfile(
             @Header("Authorization") String token,
             @Path("id") String id,
